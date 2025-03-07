@@ -1,0 +1,18 @@
+.about-me > .centered {
+  display: flex;
+  flex-direction: row;
+}
+.profile {
+  width: 32%;
+
+}
+.photo {
+  width: 190px;
+  height: 210px;
+  border-radius: 50%;
+  border: 2px solid #6ca1c5;
+}
+
+.about-me {
+    margin-top: 40px;
+}

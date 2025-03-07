@@ -6,12 +6,13 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "UhBeeSe_hyun";
-  src: url("https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff")
+  font-family: "UhBeepuding";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 header {
   width: 100vw;
   position: fixed;
@@ -58,9 +59,30 @@ nav {
   opacity: 0.8;
 }
 
+
+.links > li.active {
+  background-color: #2893db; /* 선택된 항목 색상 */
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+}
+
+
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
     gap: 20px;
   }
 }
+
+
+footer {
+  width: 100vw;
+  bottom: 0px;
+  z-index: 1;
+  font-family: "Pretendard-Regular";
+  color: white;
+  padding: 20px 0;
+  background-color: #2893db;
+}
+

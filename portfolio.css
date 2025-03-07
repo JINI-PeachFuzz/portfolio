@@ -1,0 +1,85 @@
+/* Projects 섹션 스타일 */
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* Projects 제목을 오른쪽으로 정렬 */
+.projects-title {
+  flex: 1;
+  text-align: right;
+  font-size: 40px;
+  font-family: "Pretendard-Regular";
+  color: #2980b9;
+  margin-right: 50px;
+}
+
+/* 프로젝트 이미지 컨테이너 */
+.projects-grid {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 배열 */
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  padding-bottom: 50px;
+}
+
+/* 개별 포트폴리오 아이템 */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%; /* 크기를 고정 */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 마우스를 올렸을 때 확대 효과 */
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+/* 오버레이 효과 */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* 마우스를 올리면 오버레이가 보이도록 설정 */
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.overlay span {
+  font-size: 16px;
+}
