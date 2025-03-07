@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const activeTimeline = document.querySelector(".timeline.active");
     if (activeTimeline) {
       const items = activeTimeline.querySelectorAll(".timeline-item");
-      activeTimeline.style.height = `${items.length * 120}px`; // 항목 개수에 따라 높이 조정
+      activeTimeline.style.height = `${items.length * 83}px`; // 항목 개수에 따라 높이 조정
     }
   }
 });
