@@ -116,13 +116,13 @@
 
 h3 {
   font-size: 13px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   font-weight: bold;
 }
 
-p {
+h4 {
   font-size: 12px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
 }
 
 span {
