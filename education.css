@@ -1,5 +1,128 @@
-.centered {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-  }
+/* 전체 섹션 스타일 */
+.experience {
+  width: 100vw;
+  padding: 70px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+/* 탭 버튼 스타일 */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: gray;
+  transition: color 0.3s;
+}
+
+.tabs button.active {
+  color: #2893db;
+  font-weight: bold;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* 필요에 따라 조절 */
+  margin: 20px auto;
+}
+.timeline-item .content {
+  width: 20%; /* 좌우 균형 조절 */
+}
+
+.timeline.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 타임라인 수직선 */
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #2893db; /*세로선*/
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+/* 원(circle) 스타일 */
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: #2893db;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 타임라인 내용 (공통 스타일) */
+.content {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 250px; /* 최소 크기 설정 */
+}
+
+/* 홀수 번째 요소 (왼쪽 배치) */
+.timeline-item:nth-child(odd) {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* 짝수 번째 요소 (오른쪽 배치) */
+.timeline-item:nth-child(even) {
+  justify-content: flex-end;
+  text-align: left;
+}
+
+/* 타임라인 컨테이너 기본 설정 */
+.timeline-container {
+  position: relative;
+  width: 61%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+h3 {
+  font-size: 15px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+span {
+font-size: 12px;
+}

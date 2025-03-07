@@ -52,6 +52,7 @@ nav {
   border-radius: 10px;
   border: none;
   transition: all 0.3s;
+  list-style: none;
 }
 .links > li:hover {
   background-color: #85ceff;
@@ -59,14 +60,20 @@ nav {
   opacity: 0.8;
 }
 
-
-.links > li.active {
-  background-color: #2893db; /* 선택된 항목 색상 */
-  color: white;
-  font-weight: bold;
-  opacity: 1;
+.links a {
+  text-decoration: none;  /* 밑줄 제거 */
+  font-size: 20px;
+  border-radius: 10px;
+  color: #74b9ff; /* 기본 색상 */
+  transition: all 0.3s;
+  display: block; /* 블록 요소로 만들어서 클릭 영역 확대 */
 }
 
+.links a:hover {
+  background-color: #85ceff;
+  color: white;
+  opacity: 0.8;
+}
 
 @media screen and (max-width: 768px) {
   nav {
