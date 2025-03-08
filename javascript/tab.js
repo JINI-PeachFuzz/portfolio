@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".tab-btn");
   const timelines = document.querySelectorAll(".timeline");
 
-  // 초기값: Education이 기본적으로 표시됨
+  // 초기값/ Education이 기본적으로 표시됨
   document.querySelector(".timeline.education").classList.add("active");
 
   buttons.forEach((button) => {

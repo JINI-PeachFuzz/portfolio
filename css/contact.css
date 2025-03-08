@@ -3,7 +3,7 @@
   text-align: left;
 }
 
-/* 컨택택 내용 배치 */
+/* 컨택 내용 배치 */
 .contactbox {
   display: flex;
   align-items: center;
@@ -15,21 +15,21 @@
   margin-left: 50px;
 }
 
-/* 문단 스타일 */
+
 .contactbox p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
-/* 아이콘 스타일 */
+
 .contactbox i {
   font-size: 18px;
   margin-right: 8px;
   color: #2893db;
 }
 
-/* 링크 & 텍스트 스타일 */
+
 .contactbox span,
 .contactbox a {
   font-size: 16px;

@@ -39,15 +39,15 @@ nav {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #74b9ff;  /* 기본 색상 */
-  display: flex;  /* 가로 정렬 유지 */
+  color: #74b9ff; 
+  display: flex;  
   align-items: center;
-  gap: 5px;  /* 아이콘과 텍스트 간격 */
+  gap: 5px;  
 }
 
 .logo:hover {
   text-decoration: none; /* 밑줄 제거 */
-  color: #2893db; /* 호버 시 색상 변경 */
+  color: #2893db; 
 }
 
 a.logo {
@@ -80,7 +80,7 @@ a.logo {
   text-decoration: none;  /* 밑줄 제거 */
   font-size: 20px;
   border-radius: 10px;
-  color: #74b9ff; /* 기본 색상 */
+  color: #74b9ff; 
   transition: all 0.3s;
   display: block; /* 블록 요소로 만들어서 클릭 영역 확대 */
 }
