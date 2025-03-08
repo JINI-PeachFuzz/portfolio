@@ -61,7 +61,7 @@
   transform: translateX(-50%);
 }
 
-/* 원(circle) 스타일 */
+/* 원 스타일 */
 .circle {
   width: 15px;
   height: 15px;
@@ -133,3 +133,46 @@ h1 {
   font-size: 18px;
 }
 
+
+@media screen and (max-width: 842px) {
+  .timeline-container {
+    width: 100%;
+  }
+
+  /* 선과 원 삭제쓰 */
+  .timeline::before,
+  .circle {
+    display: none;
+  }
+
+  /* 한 줄 정렬로 변경 */
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    text-align: left;
+    margin-left: 30px; /* 왼쪽 정렬 유지 */
+  }
+
+ 
+  .timeline-item:nth-child(even) {
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+
+  .content {
+    width: auto;
+    max-width: 400px;
+    margin-left: 20px; 
+  }
+}
+
+/* 해당카테고리만 보이게 */
+.timeline {
+  display: none;
+}
+
+.timeline.active {
+  display: flex;
+  flex-direction: column;
+}

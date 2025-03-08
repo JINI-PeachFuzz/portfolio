@@ -3,7 +3,7 @@
   text-align: left;
 }
 
-/* CONTACT 내용 배치 */
+/* 컨택택 내용 배치 */
 .contactbox {
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
 
 
 .contact-links {
-  flex: 1; /* 두 div를 동일한 크기로 맞춤 */
+  flex: 1; /* div들을 동일한 크기로 맞춤 */
   margin-left: 50px;
 }
 
@@ -42,7 +42,7 @@
   font-weight: bold;
 }
 
-/* 반응형 - 모바일에서 세로 정렬 */
+
 @media screen and (max-width: 768px) {
   .contactbox {
     flex-direction: column;

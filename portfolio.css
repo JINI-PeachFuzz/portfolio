@@ -69,7 +69,7 @@
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 
-  /* 추가: 클릭 이벤트 방지 */
+  /* 클릭 이벤트 방지 */
   pointer-events: none;
 }
 
@@ -85,4 +85,24 @@
 
 .overlay span {
   font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 905px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* 한 줄 */
+  }
+
+  .overlay {
+    padding: 10px;
+  }
+
+  .overlay h3 {
+    font-size: 16px;
+  }
+
+  .overlay span {
+    font-size: 12px;
+  }
 }

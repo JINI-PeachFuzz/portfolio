@@ -16,3 +16,20 @@
 .about-me {
     margin-top: 40px;
 }
+
+
+@media screen and (max-width: 912px) {
+  .about-me > .centered {
+    flex-direction: column; 
+    text-align: center;
+    gap: 15px;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .about-text {
+    width: 90%;
+  }
+}
