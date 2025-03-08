@@ -37,6 +37,22 @@ nav {
 
 .logo {
   font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #74b9ff;  /* 기본 색상 */
+  display: flex;  /* 가로 정렬 유지 */
+  align-items: center;
+  gap: 5px;  /* 아이콘과 텍스트 간격 */
+}
+
+.logo:hover {
+  text-decoration: none; /* 밑줄 제거 */
+  color: #2893db; /* 호버 시 색상 변경 */
+}
+
+a.logo {
+  display: inline-block; /* 클릭 가능한 범위를 로고 크기에 맞춤 */
+  padding: 10px 15px;  /* 클릭 가능 영역 확대 */
 }
 
 .links {
@@ -89,7 +105,17 @@ footer {
   z-index: 1;
   font-family: "Pretendard-Regular";
   color: white;
-  padding: 20px 0;
+  padding: 60px 0;
   background-color: #2893db;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
 
+.footers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}

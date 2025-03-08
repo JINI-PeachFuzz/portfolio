@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="education.css" />
     <link rel="stylesheet" href="skill.css" />
     <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="contact.css" />
     <script src="tab.js"></script>
-  
+
 
     <link
       rel="stylesheet"
@@ -25,10 +26,10 @@
 
     <header>
       <nav>
-        <div class="logo">
+        <a href="#top" class="logo">
           <i class="fa-solid fa-cloud"></i> JINI's Portfolio
           <i class="fa-solid fa-cloud"></i>
-        </div>
+        </a>
         <ul class="links">
           <li>
             <a href="#move-about"> About Me</a>
@@ -307,68 +308,121 @@
 
         <div class="projects-grid">
           <div class="portfolio-item">
-            <img src="/img/todo.png" alt="todo" />
+            <a href="https://cis-pintech.onedu.blue/" target="_blank">
+            <img src="/img/anonymous.png" alt="anonymous" /></a>
+            <div class="overlay">
+            <h3>Anonymous</h3>
+            <span>카드상품 추천시스템 구현 프로젝트입니다.</span><br>
+            <span>계좌를 등록한 후 사용자의 소비 패턴을 다양한 카테고리로 분류 및</span>
+            <span>가장 유사한 소비 패턴을 k-최근접 이웃 알고리즘을 이용하여</span>
+            <span>최적의 카드 및 대출 상품을 추천하는 서비스입니다.</span>
+            <br>
+            <span>관리자 로그인</span>
+            <span>ID : user01@test.org</span>
+            <span>PW : _aA123456</span>
+            <br><br>
+            <span style="font-size: 20px; color: #2893db; font-weight: bold;">Click시 배포 사이트로 이동됩니다</span>
+          </div>
+        </div>
+          <div class="portfolio-item">
+
+            <a href="https://github.com/JINI-PeachFuzz/ai_todo_project" target="_blank">
+              
+            <img src="/img/todo.png" alt="todo" /></a>
+
             <div class="overlay">
               <h3>Todo List</h3>
               <span>자신의 일정을 관리할 수 있는 미니프로젝트입니다.</span>
               <span>일정 추가, 완료설정, 삭제 할 수 있는 서비스를 제공합니다.</span>
+              <br><br>
+              <span style="font-size: 20px; color: #2893db; font-weight: bold;">Click시 해당 GitHub 주소로 이동됩니다</span>
             </div>
           </div>
           <div class="portfolio-item">
-            <img src="/img/pokemon.png" alt="pokemon" />
+
+            <a href="https://github.com/JINI-PeachFuzz/AI_pokemon" target="_blank">
+              <img src="/img/pokemon.png" alt="pokemon" /></a>
+
+         
             <div class="overlay">
               <h3>Pokemon CloneCoding</h3>
               <span>포켓몬 공식 홈페이지를 클론코딩한 프로젝트입니다.</span><br>
               <span>관리자 로그인</span>
               <span>ID : </span>
               <span>PW : </span>
+              <br><br>
+              <span style="font-size: 20px; color: #2893db; font-weight: bold;">Click시 해당 GitHub 주소로 이동됩니다</span>
             </div>
           </div>
           <div class="portfolio-item">
-            <img src="/img/restaurant.png" alt="restaurant" />
+
+            <a href="https://github.com/JINI-PeachFuzz/restaurant-web" target="_blank">
+              <img src="/img/restaurant.png" alt="restaurant" /></a>
+
+            
             <div class="overlay">
               <h3>Restaurant</h3>
+              <span>식당 추천 미니프로젝트입니다.</span>
               <span>현재위치 또는 지역으로 확습된 주변식당 조회 서비스를 제공합니다.</span>
+              <br><br>
+              <span style="font-size: 20px; color: #2893db; font-weight: bold;">Click시 해당 GitHub 주소로 이동됩니다</span>
             </div>
           </div>
-          <div class="portfolio-item">
-            <img src="/img/anonymous.png" alt="anonymous" />
-            <div class="overlay">
-              <h3>Anonymous</h3>
-              <span>카드상품 추천시스템 구현 프로젝트입니다.</span><br>
-              <span>계좌를 등록한 후 사용자의 소비 패턴을 다양한 카테고리로 분류 및</span>
-              <span>가장 유사한 소비 패턴을 k-최근접 이웃 알고리즘을 이용하여</span>
-              <span>최적의 카드 및 대출 상품을 추천하는 서비스입니다.</span>
-              <span
-                >https://cis-pintech.onedu.blue/</span
-              ><br>
-              <span>관리자 로그인</span>
-              <span>ID : user01@test.org</span>
-              <span>PW : _aA123456</span>
-            </div>
-          </div>
+         
         </div>
-
       </div>
       </section>
     </div>
     </main>
 
 
-    <footer id="move-Contact">
-    <div class="footers">
+    <section id="move-Contact" class="contact">
       <div class="centered">
-        <div >
-          <i class="fa-solid fa-envelope"></i>
-          <span>Email : aricclunj@naver.com</span>
+        <h5>CONTACT</h5>  <!-- h5를 contactbox 밖으로 이동 -->
+        <div class="contactbox">
+          <!-- 왼쪽 (CONTACT 정보) -->
+          <div class="contact-info">
+            <p>저의 포트폴리오를 방문해 주셔서 감사합니다.<br>
+              더 나은 서비스를 제공하기 위해 소통과 배려를 바탕으로 끊임없이 성장하는 개발자가 되겠습니다.<br>
+              궁금한 점이 있으시면 언제든지 편하게 연락 주세요. 감사합니다.
+            </p>
+          </div>
+    
+          <!-- 오른쪽 (연락처, 이메일, GitHub) -->
+          <div class="contact-links">
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              Email : aricclunj@naver.com
+            </p>
+            <p>
+              <i class="fa-solid fa-mobile-screen"></i>
+              Phone : 010-7483-0411
+            </p>
+            <p>
+              <a href="https://github.com/JINI-PeachFuzz" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub : https://github.com/JINI-PeachFuzz
+              </a>
+            </p>
+            <p>
+              <a href="https://velog.io/@jini_0411/posts" target="_blank">
+                <i class="fa-solid fa-house"></i>
+               Blog : https://velog.io/@jini_0411/posts
+              </a>
+            </p>
+          </div>
         </div>
-        <div >
-          <i class="fa-solid fa-mobile-screen"></i>
-          <span>PhoneNumber : 010-7483-0411</span>
-        </div>
-        <div >
-          <i class="fa-brands fa-github"></i>
-          <span>GitHub : https://github.com/JINI-PeachFuzz</span>
+      </div>
+    </section>
+    
+
+
+    <footer>
+    <div>
+      <div class="centered">
+        <div class="footers">
+          <div>상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</div>
+          <div style="font-size: 14px;">© Untitled. All rights reserved. </div>
         </div>
       </div>
         </div>

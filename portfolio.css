@@ -26,7 +26,7 @@
   grid-template-columns: repeat(2, 1fr); /* 2x2 배열 */
   grid-template-rows: repeat(2, 1fr);
   gap: 15px;
-  padding-bottom: 50px;
+  
 }
 
 /* 개별 포트폴리오 아이템 */
@@ -68,6 +68,9 @@
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+
+  /* 추가: 클릭 이벤트 방지 */
+  pointer-events: none;
 }
 
 /* 마우스를 올리면 오버레이가 보이도록 설정 */

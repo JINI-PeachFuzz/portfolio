@@ -1,0 +1,57 @@
+.contact {
+  padding: 50px 0 80px; /* 푸터와 간격 벌리기 */
+  text-align: left;
+}
+
+/* CONTACT 내용 배치 */
+.contactbox {
+  display: flex;
+  align-items: center;
+}
+
+
+.contact-links {
+  flex: 1; /* 두 div를 동일한 크기로 맞춤 */
+  margin-left: 50px;
+}
+
+/* 문단 스타일 */
+.contactbox p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* 아이콘 스타일 */
+.contactbox i {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #2893db;
+}
+
+/* 링크 & 텍스트 스타일 */
+.contactbox span,
+.contactbox a {
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.contactbox a:hover {
+  color: #2893db;
+  font-weight: bold;
+}
+
+/* 반응형 - 모바일에서 세로 정렬 */
+@media screen and (max-width: 768px) {
+  .contactbox {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info,
+  .contact-links {
+    width: 100%;
+    margin-left: 0;
+  }
+}
