@@ -4,7 +4,7 @@
   min-width: 1000px;
   height: 200px;
   position: relative;
-  background-image: url(/image/main.jpg);
+  background-image: url("../image/main.jpg");
   background-size: cover;
   margin: 0 auto;
   background-position: center;
@@ -12,9 +12,51 @@
   padding: 10px;
 }
 
+@media screen and (max-width: 768px) {
+.topimage {
+  display: none;
+}
+
+.about-me {
+    padding-top: 250px;
+  }
+
+}
+  
+
+@media screen and (max-width: 768px) {
+  .centered {
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center; /* 내부 텍스트도 가운데 정렬 */
+  }
+
+  /* 모든 섹션 중앙 정렬 */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* CONTACT 정보도 중앙 정렬 */
+  .contactbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* FOOTER도 가운데 정렬 */
+  footer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .centered {
-  width: 100%;
-  max-width: 1024px;
+  max-width: 95%;
   margin: 0 auto;
 }
 

@@ -23,6 +23,8 @@
     flex-direction: column; 
     text-align: center;
     gap: 15px;
+    width: 95%;
+    margin: 0 auto;
   }
 
   .profile {
@@ -33,3 +35,4 @@
     width: 90%;
   }
 }
+

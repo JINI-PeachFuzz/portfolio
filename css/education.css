@@ -153,7 +153,18 @@ h1 {
     max-width: 400px;
     margin-left: 20px;
   }
+
+  .tabs {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    margin: auto; /* 추가 */
+    padding-top: 10px;
+  }
 }
+
+
 
 /* 해당카테고리만 보이게 */
 .timeline {
