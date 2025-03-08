@@ -143,15 +143,9 @@ h1 {
   /* 한 줄 정렬로 변경 */
   .timeline-item {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 90%;
-    text-align: left;
     margin-left: 30px; 
-  }
-
-  .timeline-item:nth-child(even) {
-    justify-content: flex-start;
-    align-self: flex-start;
   }
 
   .content {

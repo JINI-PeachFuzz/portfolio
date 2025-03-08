@@ -4,15 +4,14 @@
   min-width: 1000px;
   height: 200px;
   position: relative;
-  background-image: url(/portfolio/image/main.jpg);
+  background-image: url(/image/main.jpg);
   background-size: cover;
   margin: 0 auto;
   background-position: center;
   margin-top: 75.96px;
   padding: 10px;
-
-
 }
+
 .centered {
   width: 100%;
   max-width: 1024px;
