@@ -4,23 +4,21 @@
   justify-content: center; /* 가로 정렬 */
   align-items: center; /* 세로 정렬 */
   max-width: 1100px;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .profile {
-  width: 32%;
+ width: 25%;
+ display: flex;
+ justify-content: center
 }
 
 .photo {
-  width: 190px;
-  height: 210px;
+  width: 117px;
+  height: 157px;
   border-radius: 50%;
-  border: 2px solid #6ca1c5;
-}
-
-.about-me {
-  margin-top: 40px;
+  border: 2.1px solid #6ca1c5;
 }
 
 @media screen and (max-width: 912px) {
@@ -42,19 +40,27 @@
     text-align: center;
   }
 
-  /* 📌 h5 제목을 완전히 중앙 정렬 */
+  /* h5 제목을 완전히 중앙 정렬 */
   .about-text h5 {
     display: block;
-    width: 100%; /* 📌 부모 요소를 가득 채우게 */
+    width: 100%; /* 부모 요소를 가득 채우게 */
     text-align: center;
     margin: 0 auto 10px auto; /* 위아래 마진 조정 */
   }
 
-
-  /* 📌 텍스트 정렬 및 균등한 여백 */
+  /* 텍스트 정렬 및 균등한 여백 */
   .about-text p {
     margin: 5px auto;
     text-align: center;
-    width: 80%; /* 너무 넓지 않게 조정 */
+    width: 90%; /* 너무 넓지 않게 조정 */
   }
 }
+
+
+/* 기본적으로 헤더와 본문 사이 여백을 줄임 */
+.about-me {
+  padding-top: 50px; /* 기본적으로 여백 줄이기 */
+  transition: padding-top 0.3s ease-in-out;
+}
+
+/* 햄버거 버튼이 활성화되면 여백을 원래 크기로 변경 */

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/portfolio.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <script src="./javascript/tab.js"></script>
-    
+    <script src="./javascript/toggle.js"></script>
 
     <link
       rel="stylesheet"
@@ -24,23 +24,27 @@
     />
   </head>
 
-    <header>
-      <nav>
+  <header>
+    <nav>
         <a href="#top" class="logo">
           <i class="fa-solid fa-cloud"></i> JINI's Portfolio
           <i class="fa-solid fa-cloud"></i>
         </a>
-        <ul class="links">
-          <li>
-            <a href="#move-about"> About Me</a>
-           </li>
-          <li> <a href="#move-Education-Experience">Education & Experience</a></li>
-          <li> <a href="#move-Skill-Tool">Skill & Tool</a></li>
-          <li> <a href="#move-Projects">Projects</a></li>
-          <li> <a href="#move-Contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  
+      <!-- 화살표 버튼 (반응형에서만 보이게) -->
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i> <!-- 햄버거 아이콘 -->
+      </div>
+  
+      <ul class="links" id="nav-links">
+        <li><a href="#move-about">About Me</a></li>
+        <li><a href="#move-Education-Experience">Education & Experience</a></li>
+        <li><a href="#move-Skill-Tool">Skill & Tool</a></li>
+        <li><a href="#move-Projects">Projects</a></li>
+        <li><a href="#move-Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
     <main>
       
