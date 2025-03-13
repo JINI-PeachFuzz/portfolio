@@ -39,14 +39,17 @@
   .about-text {
     width: 90%;
     margin: 0 auto;
-  
-  }
-
-  /* 📌 제목 아래 여백 정리 */
-  .about-text h5 {
-    margin-bottom: 10px; /* 기본 마진보다 줄이기 */
     text-align: center;
   }
+
+  /* 📌 h5 제목을 완전히 중앙 정렬 */
+  .about-text h5 {
+    display: block;
+    width: 100%; /* 📌 부모 요소를 가득 채우게 */
+    text-align: center;
+    margin: 0 auto 10px auto; /* 위아래 마진 조정 */
+  }
+
 
   /* 📌 텍스트 정렬 및 균등한 여백 */
   .about-text p {
