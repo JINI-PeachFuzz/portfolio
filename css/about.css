@@ -27,6 +27,7 @@
   .about-me > .centered {
     flex-direction: column;
     text-align: center;
+    align-items: center;
     width: 100%; /* 모바일에서는 전체 너비 사용 */
     margin: 0 auto;
   }
@@ -38,5 +39,19 @@
   .about-text {
     width: 90%;
     margin: 0 auto;
+  
+  }
+
+  /* 📌 제목 아래 여백 정리 */
+  .about-text h5 {
+    margin-bottom: 10px; /* 기본 마진보다 줄이기 */
+    text-align: center;
+  }
+
+  /* 📌 텍스트 정렬 및 균등한 여백 */
+  .about-text p {
+    margin: 5px auto;
+    text-align: center;
+    width: 80%; /* 너무 넓지 않게 조정 */
   }
 }
