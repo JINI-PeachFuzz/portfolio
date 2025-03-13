@@ -1,11 +1,17 @@
 .about-me > .centered {
   display: flex;
   flex-direction: row;
+  justify-content: center; /* 가로 정렬 */
+  align-items: center; /* 세로 정렬 */
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
 }
+
 .profile {
   width: 32%;
-
 }
+
 .photo {
   width: 190px;
   height: 210px;
@@ -14,16 +20,14 @@
 }
 
 .about-me {
-    margin-top: 40px;
+  margin-top: 40px;
 }
-
 
 @media screen and (max-width: 912px) {
   .about-me > .centered {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
-    gap: 15px;
-    width: 95%;
+    width: 100%; /* 모바일에서는 전체 너비 사용 */
     margin: 0 auto;
   }
 
@@ -33,6 +37,6 @@
 
   .about-text {
     width: 90%;
+    margin: 0 auto;
   }
 }
-
