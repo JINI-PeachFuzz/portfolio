@@ -53,4 +53,17 @@
     width: 100%;
     margin-left: 0;
   }
+
+  /* 텍스트 정렬 및 균등한 여백 */
+  .contactbox p {
+    margin: 5px auto;
+    text-align: center;
+    width: 90%; /* 너무 넓지 않게 조정 */
+  }
+
+  .contactbox {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }

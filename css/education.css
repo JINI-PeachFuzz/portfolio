@@ -165,7 +165,7 @@ h1 {
     padding-top: 10px;
   }
 
-  h5 {
+  h5,p {
     display: block;
     width: 100%;
     text-align: center;

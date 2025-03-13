@@ -42,3 +42,24 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".links a"); // 네비게이션 링크 선택
+
+  navLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+          e.preventDefault(); // 기본 이동 방지
+
+          const targetId = this.getAttribute("href").substring(1); // href에서 ID 추출
+          const targetElement = document.getElementById(targetId); // 해당 ID의 요소 찾기
+
+          if (targetElement) {
+              const headerHeight = 100; // 네비게이션 바 높이 조정
+              
+              window.scrollTo({
+                  top: targetElement.offsetTop - headerHeight, // 기존보다 위로 이동
+                  behavior: "smooth" // 부드러운 스크롤
+              });
+          }
+      });
+  });
+});
