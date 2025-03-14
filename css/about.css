@@ -8,17 +8,61 @@
   margin: 0 auto;
 }
 
+.toggle-content {
+  display: none; /* 기본적으로 숨김 */
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-header {
+  cursor: pointer; 
+  color: #2c3e50;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.toggle-header:hover {
+  color: #2980b9; 
+}
+
+.toggle-header {
+  cursor: pointer;
+  color: #2c3e50;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 텍스트와 아이콘을 양끝 정렬 */
+  transition: color 0.3s;
+}
+
+/* ▼ 아이콘 기본 스타일 */
+.toggle-icon {
+  font-size: 14px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 열린 상태에서 ▼ 아이콘 회전 */
+.toggle-header.active .toggle-icon {
+  transform: rotate(180deg); /* 아래 화살표를 위쪽으로 회전 */
+}
+
+
 .profile {
  width: 25%;
  display: flex;
- justify-content: center
+ justify-content: center;
+ margin-right: 40px; /* 기본적으로 간격을 좁게 설정 */
 }
+
 
 .photo {
   width: 117px;
   height: 157px;
   border-radius: 50%;
   border: 2.1px solid #6ca1c5;
+}
+
+.about-text p {
+   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 912px) {
@@ -32,6 +76,7 @@
 
   .profile {
     width: 100%;
+    margin-right: 0; /* 모바일에서는 마진 제거 */
     padding-top: 55px;
   }
 
@@ -63,5 +108,3 @@
   padding-top: 50px; /* 기본적으로 여백 줄이기 */
   transition: padding-top 0.3s ease-in-out;
 }
-
-/* 햄버거 버튼이 활성화되면 여백을 원래 크기로 변경 */
