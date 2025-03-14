@@ -1,8 +1,8 @@
 .about-me > .centered {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* 가로 정렬 */
-  align-items: center; /* 세로 정렬 */
+  justify-content: center; 
+  align-items: center; 
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
@@ -30,19 +30,19 @@
   font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* 텍스트와 아이콘을 양끝 정렬 */
+  justify-content: space-between; 
   transition: color 0.3s;
 }
 
-/* ▼ 아이콘 기본 스타일 */
+/* 아이콘 기본 스타일 */
 .toggle-icon {
   font-size: 14px;
   transition: transform 0.3s ease-in-out;
 }
 
-/* 열린 상태에서 ▼ 아이콘 회전 */
+/* 열린 상태에서 아이콘 회전 */
 .toggle-header.active .toggle-icon {
-  transform: rotate(180deg); /* 아래 화살표를 위쪽으로 회전 */
+  transform: rotate(180deg); 
 }
 
 
@@ -50,7 +50,7 @@
  width: 25%;
  display: flex;
  justify-content: center;
- margin-right: 40px; /* 기본적으로 간격을 좁게 설정 */
+ margin-right: 40px; 
 }
 
 
@@ -70,13 +70,13 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    width: 100%; /* 모바일에서는 전체 너비 사용 */
+    width: 100%; 
     margin: 0 auto;
   }
 
   .profile {
     width: 100%;
-    margin-right: 0; /* 모바일에서는 마진 제거 */
+    margin-right: 0; 
     padding-top: 55px;
   }
 
@@ -86,25 +86,23 @@
     text-align: center;
   }
 
-  /* h5 제목을 완전히 중앙 정렬 */
+  /* h5 완전 중앙 정렬 */
   .about-text h5 {
     display: block;
-    width: 100%; /* 부모 요소를 가득 채우게 */
+    width: 100%; 
     text-align: center;
-    margin: 0 auto 10px auto; /* 위아래 마진 조정 */
+    margin: 0 auto 10px auto; 
   }
 
   /* 텍스트 정렬 및 균등한 여백 */
   .about-text p {
     margin: 5px auto;
     text-align: center;
-    width: 90%; /* 너무 넓지 않게 조정 */
+    width: 90%; 
   }
 }
 
-
-/* 기본적으로 헤더와 본문 사이 여백을 줄임 */
 .about-me {
-  padding-top: 50px; /* 기본적으로 여백 줄이기 */
+  padding-top: 50px; 
   transition: padding-top 0.3s ease-in-out;
 }
