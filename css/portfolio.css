@@ -27,21 +27,38 @@
   
 }
 
+.projectbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.projectbox a {
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s ease-in-out; 
+}
+
+
 .portfolio-item {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   cursor: pointer;
-  width: 100%; /* 크기를 고정 */
-  height: auto;
+  width: 100%; /* 부모 요소 크기에 맞게 조정 */
+  aspect-ratio: 16 / 9; /* 모든 이미지 동일한 비율 유지 */
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f8f9fa; /* 빈 공간 대비 배경 추가 */
 }
 
 .portfolio-item img {
   width: 100%;
-  height: auto;
+  height: 100%; 
+  object-fit: cover; 
   transition: transform 0.3s ease-in-out;
 }
 
