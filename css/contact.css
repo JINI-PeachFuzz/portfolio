@@ -3,12 +3,24 @@
   text-align: left;
 }
 
-/* 컨택 내용 배치 */
+
 .contactbox {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 80px;
 }
 
+@media (max-width: 768px) { 
+  .contactbox {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contactbox > div:first-child {
+    margin-right: 0;
+  }
+}
 
 .contact-links {
   flex: 1; /* div들을 동일한 크기로 맞춤 */
