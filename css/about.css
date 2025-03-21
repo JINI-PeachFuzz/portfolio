@@ -62,7 +62,11 @@
 }
 
 .about-text p {
-   margin-bottom: 10px;
+   margin-bottom: 13px;
+}
+
+.about-text {
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 912px) {
@@ -84,6 +88,7 @@
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    line-height: 1.5;
   }
 
   /* h5 완전 중앙 정렬 */
@@ -99,6 +104,7 @@
     margin: 5px auto;
     text-align: center;
     width: 90%; 
+    margin-bottom: 10px; 
   }
 }
 
