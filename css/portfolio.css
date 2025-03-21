@@ -99,6 +99,46 @@
   font-size: 16px;
 }
 
+/* 기본 스타일 */
+h2 {
+  display: block; 
+  text-align: left; 
+  padding-bottom: 10px; 
+  margin-bottom: 10px;
+  white-space: nowrap; /* 줄바꿈 방지 */
+}
+
+
+h2 br {
+  display: none; /* 기본적으로 br 숨김 */
+}
+
+
+@media screen and (max-width: 842px) {
+  h2 {
+    text-align: center; 
+    white-space: normal; /* 줄바꿈 허용 */
+  }
+  
+  h2 br {
+    display: block; /* 모바일에서는 줄바꿈 허용 */
+  }
+}
+
+.github-link a {
+  text-decoration: none; /* 밑줄 제거 */
+  color: #2893db; 
+  font-weight: bold; 
+  background-color: transparent; 
+  padding: 5px 10px; 
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* 부드러운 전환 */
+}
+
+.github-link a:hover {
+  background-color: #86c3ff; 
+  color: #143556; 
+  border-radius: 5px; 
+}
 
 
 @media screen and (max-width: 905px) {
