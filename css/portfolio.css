@@ -137,7 +137,7 @@ h2 br {
 
 .overlay span {
   text-align: center;
-  padding: 1px;
+  padding: 0px 10px 0px 10px ;
 }
 
 @media screen and (max-width: 905px) {
