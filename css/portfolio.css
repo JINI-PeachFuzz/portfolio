@@ -17,14 +17,12 @@
   margin-right: 50px;
 }
 
-
 .projects-grid {
   flex: 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2x2 배열 */
   grid-template-rows: repeat(2, 1fr);
   gap: 15px;
-  
 }
 
 .projectbox {
@@ -36,11 +34,10 @@
 }
 
 .projectbox a {
-  text-decoration: none; 
-  font-weight: bold; 
-  transition: color 0.3s ease-in-out; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
-
 
 .portfolio-item {
   position: relative;
@@ -57,8 +54,8 @@
 
 .portfolio-item img {
   width: 100%;
-  height: 100%; 
-  object-fit: cover; 
+  height: 100%;
+  object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -101,25 +98,23 @@
 
 /* 기본 스타일 */
 h2 {
-  display: block; 
-  text-align: left; 
-  padding-bottom: 10px; 
+  display: block;
+  text-align: left;
+  padding-bottom: 10px;
   margin-bottom: 10px;
   white-space: nowrap; /* 줄바꿈 방지 */
 }
-
 
 h2 br {
   display: none; /* 기본적으로 br 숨김 */
 }
 
-
 @media screen and (max-width: 842px) {
   h2 {
-    text-align: center; 
+    text-align: center;
     white-space: normal; /* 줄바꿈 허용 */
   }
-  
+
   h2 br {
     display: block; /* 모바일에서는 줄바꿈 허용 */
   }
@@ -127,19 +122,23 @@ h2 br {
 
 .github-link a {
   text-decoration: none; /* 밑줄 제거 */
-  color: #2893db; 
-  font-weight: bold; 
-  background-color: transparent; 
-  padding: 5px 10px; 
+  color: #2893db;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 5px 10px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* 부드러운 전환 */
 }
 
 .github-link a:hover {
-  background-color: #86c3ff; 
-  color: #143556; 
-  border-radius: 5px; 
+  background-color: #86c3ff;
+  color: #143556;
+  border-radius: 5px;
 }
 
+.overlay span {
+  text-align: center;
+  padding: 1px;
+}
 
 @media screen and (max-width: 905px) {
   .projects-grid {
